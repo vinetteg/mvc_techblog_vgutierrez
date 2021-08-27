@@ -1,0 +1,20 @@
+{{#if loggedIn}}
+  <form class='comment-form needs-validation container row' novalidate>
+    <div>
+      <textarea
+        class='comment-textarea form-control'
+        name='comment-body'
+        required
+      ></textarea>
+      <div class='invalid-feedback'>
+        Can't send an empty comment!
+      </div>
+    </div>
+
+    <div>
+      <button class='button-add-comment' type='submit'>add comment</button>
+    </div>
+  </form>
+{{/if}}
+
+<script src='../public/js/comment.js'></script>

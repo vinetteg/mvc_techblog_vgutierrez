@@ -4,9 +4,26 @@
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   <p>
-    <span for='img' aria-label='money'>💲</span>
-    <span class='dollar-amount'>{{format_amount needed_funding}}</span>
-    needed
+    {{#if loggedIn}}
+      <form class='comment-form needs-validation container row' novalidate>
+        <div>
+          <textarea
+            class='comment-textarea form-control'
+            name='comment-body'
+            required
+          ></textarea>
+          <div class='invalid-feedback'>
+            Can't send an empty comment!
+          </div>
+        </div>
+
+        <div>
+          <button class='button-add-comment' type='submit'>add comment</button>
+        </div>
+      </form>
+    {{/if}}
   </p>
 
 </div>
+
+<script src='../public/js/comment.js'></script>

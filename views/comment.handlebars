@@ -1,0 +1,16 @@
+<div class='comments bg-light text-primary container row'>
+  {{#each this}}
+    <section class='comment mb-3'>
+      <div class='meta'>
+        @{{user.name}}:
+      </div>
+      <div class='text'>
+        {{comment}}
+      </div>
+    </section>
+  {{/each}}
+
+  <b>{{user.name}}</b>
+</div>
+
+<script src='../public/js/comment.js'></script>
