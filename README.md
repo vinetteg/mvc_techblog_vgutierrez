@@ -26,9 +26,9 @@ This is the first installation of this tool.
 
 - This tool can be used to create and share news as a community. 
 
-![Homepage ](images/homepage.png)
-![Login or create account page](images/loginpage.png)
-![Blog post creation page](images/post.png)
+![Homepage ](images/homepage.jpg)
+![Login or create account page](images/login.jpg)
+![Blog post creation page](images/post.jpg)
 # License
 
 <a name="license"></a>
